@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="auther" content="UGlengmo">
+    <meta http-equiv="refresh" content="60">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Window-target" content="_top">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="copyright" content="370355440@outlook.com">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/talk.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>问题反馈</title>
+   </head>
+<body onselectstart="return false">
+  <div class="sidebar">
+    <div class="logo-details">
+        <div class="logo_name">UncleGame</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+
+      <li>
+        <a href="../服务器介绍.html">
+          <i class='bx bx-home'></i>
+          <span class="links_name">首页</span>
+        </a>
+         <span class="tooltip">首页</span>
+      </li>
+      <li>
+       <a href="服务器管理.html">
+         <i class='bx bx-group' ></i>
+         <span class="links_name">服务器管理</span>
+       </a>
+       <span class="tooltip">服务器管理</span>
+     </li>
+     <li>
+       <a href="Mods插件.html">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">Mods/插件</span>
+       </a>
+       <span class="tooltip">Mods/插件</span>
+     </li>
+     <li>
+       <a href="建筑者名单.html">
+         <i class='bx bx-award' ></i>
+         <span class="links_name">建筑者名单</span>
+       </a>
+       <span class="tooltip">建筑者名单</span>
+     </li>
+     <li>
+       <a href="服务器规则.html">
+         <i class='bx bx-bulb' ></i>
+         <span class="links_name">服务器规则</span>
+       </a>
+       <span class="tooltip">服务器规则</span>
+     </li>
+     <li>
+       <a href="赞助.html">
+         <i class='bx bx-coin-stack' ></i>
+         <span class="links_name">赞助</span>
+       </a>
+       <span class="tooltip">赞助</span>
+     </li>
+     <li>
+       <a href="讨论区.html">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">讨论区</span>
+       </a>
+       <span class="tooltip">讨论区</span>
+     </li>
+     <li>
+       <a href="服务器日志.html">
+         <i class='bx bx-alarm' ></i>
+         <span class="links_name">更新日志</span>
+       </a>
+       <span class="tooltip">更新日志</span>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+      <div class="text">讨论区</div>
+      <p id="smallTitle">请文明讨论</p>
+      <hr>
+      <br>
+      <div id="bigBorder">
+        <div>
+          <button id="getIdea">发表意见</button>
+        </div>
+        <br>
+        <br>
+        <div id="textBorder">
+          <p>内容区边框</p>
+          <p>内容区边框</p>
+          <p>内容区边框</p>
+          <p>内容区边框</p>
+          <p>内容区边框</p>
+        </div>
+      </div>
+  </section>
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();
+  });
+
+  searchBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();
+  });
+
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+   }
+  }
+  </script>
+</body>
+</html>

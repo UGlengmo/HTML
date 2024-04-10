@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#listTable{
+	width: 95%;
+	height: 100%;
+	margin: 2% 5% 2% 5%;
+}
+
+.rowOne{
+	padding: 0 2% 1% 2%;
+}
+
+.rowOne p{
+	text-align: center;
+	font-size: 20px;
+	color: #181d4b;
+}
+
+.modX{
+	padding-top: 2%;
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color: #77ac98;
+}
+
+a:hover{
+	color: #dea32c;
+	transition: 0.2s;
+}
+
+.all{
+	display: run-in;
+};

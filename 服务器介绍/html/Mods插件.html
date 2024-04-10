@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="auther" content="UGlengmo">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Window-target" content="_top">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="copyright" content="370355440@outlook.com">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mods.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Mods</title>
+   </head>
+<body onselectstart="return false">
+  <div class="sidebar">
+    <div class="logo-details">
+        <div class="logo_name">UncleGame</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <a href="../服务器介绍.html">
+          <i class='bx bx-home'></i>
+          <span class="links_name">首页</span>
+        </a>
+         <span class="tooltip">首页</span>
+      </li>
+      <li>
+       <a href="服务器管理.html">
+         <i class='bx bx-group' ></i>
+         <span class="links_name">服务器管理</span>
+       </a>
+       <span class="tooltip">服务器管理</span>
+     </li>
+     <li>
+       <a href="Mods插件.html">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">Mods/插件</span>
+       </a>
+       <span class="tooltip">Mods/插件</span>
+     </li>
+     <li>
+       <a href="建筑者名单.html">
+         <i class='bx bx-award' ></i>
+         <span class="links_name">建筑者名单</span>
+       </a>
+       <span class="tooltip">建筑者名单</span>
+     </li>
+     <li>
+       <a href="服务器规则.html">
+         <i class='bx bx-bulb' ></i>
+         <span class="links_name">服务器规则</span>
+       </a>
+       <span class="tooltip">服务器规则</span>
+     </li>
+     <li>
+       <a href="赞助.html">
+         <i class='bx bx-coin-stack' ></i>
+         <span class="links_name">赞助</span>
+       </a>
+       <span class="tooltip">赞助</span>
+     </li>
+     <li>
+       <a href="讨论区.html">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">讨论区</span>
+       </a>
+       <span class="tooltip">讨论区</span>
+     </li>
+     <li>
+       <a href="服务器日志.html">
+         <i class='bx bx-alarm' ></i>
+         <span class="links_name">更新日志</span>
+       </a>
+       <span class="tooltip">更新日志</span>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+      <div class="text">Mods/插件</div>
+        <br>
+        <br>
+        <div id="modList">
+          <table id="listTable">
+            <tr id="listRow">
+              <td class="rowOne"><p>顺序</p></td>
+              <td class="rowOne"><p>名称</p></td>
+              <td class="rowOne"><p>类型</p></td>
+              <td class="rowOne"><p>添加版本</p></td>
+              <td class="rowOne">
+                <p>
+                   <span>使用权限</span>
+                   <select id="whoUse">
+                   <option value="all" class="allu">全部</option>
+                   <option value="allPlayer" class="allPlayeru">所有玩家</option>
+                   <option value="some" class="someu">部分功能玩家可用</option>
+                   <option value="opAndHost" class="opAndHostu">管理员/腐竹</option>
+                   <option value="remove" class="removeu">已移除</option>
+                   </select>
+                </p>
+              </td>
+            </tr>
+            <tr class="all allPlayer">
+              <td class="modX">1</td>
+              <td class="modX">Fantasy的家具</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">所有玩家</td>
+            </tr>
+            <tr class="all allPlayer">
+              <td class="modX">2</td>
+              <td class="modX">PlayingCards</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">所有玩家</td>
+            </tr>
+            <tr class="all somePlayer">
+              <td class="modX">3</td>
+              <td class="modX">REI</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">部分功能玩家可用</td>
+            </tr>
+            <tr class="all allPlayer">
+              <td class="modX">4</td>
+              <td class="modX">车万女仆</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">所有玩家</td>
+            </tr>
+            <tr class="all allPlayer">
+              <td class="modX">5</td>
+              <td class="modX">疯狂星期四</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">所有玩家</td>
+            </tr>
+            <tr class="all allPlayer">
+              <td class="modX">6</td>
+              <td class="modX">哥布林与地下城</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">所有玩家</td>
+            </tr>
+            <tr class="all remove">
+              <td class="modX">7</td>
+              <td class="modX">机械动力</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">已移除</td>
+            </tr>
+            <tr class="all allPlayer">
+              <td class="modX">8</td>
+              <td class="modX">僵尸意识</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">所有玩家</td>
+            </tr>
+            <tr class="all remove">
+              <td class="modX">9</td>
+              <td class="modX">开放式电梯</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">已移除</td>
+            </tr>
+            <tr class="all allPlayer">
+              <td class="modX">10</td>
+              <td class="modX">懒人厨房</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">所有玩家</td>
+            </tr>
+            <tr class="all allPlayer">
+              <td class="modX">11</td>
+              <td class="modX">农夫乐事</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">所有玩家</td>
+            </tr>
+            <tr class="all allPlayer">
+              <td class="modX">12</td>
+              <td class="modX">水产业Ⅱ</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">所有玩家</td>
+            </tr>
+            <tr class="all allPlayer">
+              <td class="modX">13</td>
+              <td class="modX">灾变</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">所有玩家</td>
+            </tr>
+            <tr class="all allPlayer">
+              <td class="modX">14</td>
+              <td class="modX">装饰方块</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">所有玩家</td>
+            </tr>
+            <tr class="all somePlayer">
+              <td class="modX">15</td>
+              <td class="modX">我的世界铁路</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">部分功能玩家可用</td>
+            </tr>
+            <tr class="all allPlayer">
+              <td class="modX">16</td>
+              <td class="modX">方块小镇</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">所有玩家</td>
+            </tr>
+            <tr class="all opAndHost">
+              <td class="modX">17</td>
+              <td class="modX">设计师建模</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">管理员/腐竹</td>
+            </tr>
+            <tr class="all allPlayer">
+              <td class="modX">18</td>
+              <td class="modX">喝啤酒啦</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">所有玩家</td>
+            </tr>
+            <tr class="all remove">
+              <td class="modX">19</td>
+              <td class="modX">朴华之剑</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">已移除</td>
+            </tr>
+            <tr class="all allPlayer">
+              <td class="modX">20</td>
+              <td class="modX">地球生物</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">所有玩家</td>
+            <tr class="all remove">
+              <td class="modX">21</td>
+              <td class="modX">Yuo的更多附魔</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">已移除</td>
+            </tr>
+            <tr class="all remove">
+              <td class="modX">22</td>
+              <td class="modX">绿宝石工艺</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">已移除</td>
+            </tr>
+            <tr class="all remove">
+              <td class="modX">23</td>
+              <td class="modX">戈伯2</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">已移除</td>
+            </tr>
+            <tr class="all allPlayer">
+              <td class="modX">24</td>
+              <td class="modX">经验之书</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">所有玩家</td>
+            </tr>
+            <tr class="all allPlayer">
+              <td class="modX">25</td>
+              <td class="modX">Pro Placer</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">所有玩家</td>
+            </tr>
+            <tr class="all allPlayer">
+              <td class="modX">26</td>
+              <td class="modX">年味</td>
+              <td class="modX">Mod</td>
+              <td class="modX">V0.1.0</td>
+              <td class="modX">所有玩家</td>
+            </tr>
+          </table>
+        </div>
+  </section>
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();
+  });
+
+  searchBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();
+  });
+
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+   }
+  }
+  </script>
+</body>
+</html>
+<script src="../js/jquery-3.6.1.js"></script>
+<script type="text/javascript">
+  var options = $("#whoUse option:selected");
+  var allCU = document.querySelectorAll(".all");
+  var wcuAll = document.querySelectorAll(".allPlayer");
+  var wcuSome = document.querySelectorAll(".somePlayer");
+  var wcuRemove = document.querySelectorAll(".remove");
+  var wcuOpAndHost = document.querySelectorAll(".opAndHost");
+  $('#whoUse').change(function(){
+     if($('#whoUse').val() == 'allPlayer'){
+        $(allCU).css({"display":"table-row"});
+        $(wcuSome).css({"display":"none"});
+        $(wcuRemove).css({"display":"none"});
+        $(wcuOpAndHost).css({"display":"none"});
+      }else if($('#whoUse').val() == 'all'){
+        $(allCU).css({"display":"table-row"});
+      }else if($('#whoUse').val() == 'some'){
+        $(allCU).css({"display":"table-row"});
+        $(wcuAll).css({"display":"none"});
+        $(wcuRemove).css({"display":"none"});
+        $(wcuOpAndHost).css({"display":"none"});
+      }else if($('#whoUse').val() == 'opAndHost'){
+        $(allCU).css({"display":"table-row"});
+        $(wcuAll).css({"display":"none"});
+        $(wcuRemove).css({"display":"none"});
+        $(wcuSome).css({"display":"none"});
+      }else if($('#whoUse').val() == 'remove'){
+        $(allCU).css({"display":"table-row"});
+        $(wcuAll).css({"display":"none"});
+        $(wcuSome).css({"display":"none"});
+        $(wcuOpAndHost).css({"display":"none"});
+      }
+    });
+</script>

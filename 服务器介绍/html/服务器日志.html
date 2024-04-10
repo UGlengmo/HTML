@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="auther" content="UGlengmo">
+    <meta http-equiv="refresh" content="60">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Window-target" content="_top">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="copyright" content="370355440@outlook.com">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/daily.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>更新日志</title>
+   </head>
+<body onselectstart="return false">
+  <div class="sidebar">
+    <div class="logo-details">
+        <div class="logo_name">UncleGame</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+
+      <li>
+        <a href="../服务器介绍.html">
+          <i class='bx bx-home'></i>
+          <span class="links_name">首页</span>
+        </a>
+         <span class="tooltip">首页</span>
+      </li>
+      <li>
+       <a href="服务器管理.html">
+         <i class='bx bx-group' ></i>
+         <span class="links_name">服务器管理</span>
+       </a>
+       <span class="tooltip">服务器管理</span>
+     </li>
+     <li>
+       <a href="Mods插件.html">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">Mods/插件</span>
+       </a>
+       <span class="tooltip">Mods/插件</span>
+     </li>
+     <li>
+       <a href="建筑者名单.html">
+         <i class='bx bx-award' ></i>
+         <span class="links_name">建筑者名单</span>
+       </a>
+       <span class="tooltip">建筑者名单</span>
+     </li>
+     <li>
+       <a href="服务器规则.html">
+         <i class='bx bx-bulb' ></i>
+         <span class="links_name">服务器规则</span>
+       </a>
+       <span class="tooltip">服务器规则</span>
+     </li>
+     <li>
+       <a href="赞助.html">
+         <i class='bx bx-coin-stack' ></i>
+         <span class="links_name">赞助</span>
+       </a>
+       <span class="tooltip">赞助</span>
+     </li>
+     <li>
+       <a href="讨论区.html">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">讨论区</span>
+       </a>
+       <span class="tooltip">讨论区</span>
+     </li>
+     <li>
+       <a href="服务器日志.html">
+         <i class='bx bx-alarm' ></i>
+         <span class="links_name">更新日志</span>
+       </a>
+       <span class="tooltip">更新日志</span>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+      <div class="text">服务器更新日志</div>
+      <hr>
+      <br>
+      <div>
+        <p class="version">V0.1.0(测试服)</p>
+        <p class="updataContent">1.将服务器版本从1.19.2降至1.16.5</p>
+        <p class="updataContent">2.新增Mod{Fantasy家具、PlayingCards、REI、车万女仆}等(请自行前往Mods列表查看)</p>
+      </div>
+      <br>
+      <hr>
+      <br>
+      <div>
+        <p class="version">V0.1.1(测试服)</p>
+        <p class="updataContent">1.移除Mod-机械动力，原因：对服务器负载过大，暂不考虑安装</p>
+        <p class="updataContent">2.移除Mod-开放式电梯，原因：与我的世界铁路部分功能重合</p>
+        <p class="updataContent">3.移除Mod-朴华之剑，原因：暂不考虑启用</p>
+        <p class="updataContent">4.移除Mod-Yuo的更多附魔，原因：负面附魔无法通过对应道具消除</p>
+        <p class="updataContent">5.移除Mod-绿宝石工艺，原因：Mod熔炉GUI与REI冲突导致游戏崩溃</p>
+        <p class="updataContent">6.移除Mod-戈伯2，原因：装备与武器效果过于不平衡</p>
+        <p class="updataContent">2.新增插件{}等(请自行前往Mods/插件列表查看)</p>
+      </div>
+      <br>
+      <hr>
+      <br>
+  </section>
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();
+  });
+
+  searchBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();
+  });
+
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+   }
+  }
+  </script>
+</body>
+</html>
